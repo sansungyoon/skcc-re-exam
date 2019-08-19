@@ -259,6 +259,8 @@ HDFS, YARN, ZooKeeper 먼저 설치
 ![](/img/1-20.PNG)
 ![](/img/1-21.PNG)
 ![](/img/1-22.PNG)
+![](/img/1-23.PNG)
+![](/img/1-24.PNG)
 
 
 
