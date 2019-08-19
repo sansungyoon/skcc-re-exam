@@ -25,6 +25,7 @@ INPUTFORMAT "parquet.hive.DeprecatedParquetInputFormat"
 OUTPUTFORMAT "parquet.hive.DeprecatedParquetOutputFormat"
 LOCATION '/user/training/problem2/data/employee';
 ~~~
+![](/img/2-problem2.PNG)
 ![](/img/2-4.PNG)
 
 ## 3.
@@ -40,6 +41,7 @@ where a.amount >= 0
 ;
 
 ~~~
+![](/img/2-problem3.PNG)
 ![](/img/2-5.PNG)
 ![](/img/2-6.PNG)
 
