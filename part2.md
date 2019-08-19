@@ -6,11 +6,11 @@ on a.type = b.type
 where a.status = 'Active'
 ;
 ~~~
-
+![](/img/2-problem1.PNG)
 ![](/img/2-1.PNG)
 ![](/img/2-3.PNG)
 ![](/img/2-2.PNG)
-![](/img/2-problem1.PNG)
+
 
 ## 2.
 ~~~
