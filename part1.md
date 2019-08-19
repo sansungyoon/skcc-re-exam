@@ -145,17 +145,19 @@ sudo systemctl status mariadb
 
 ### List the following in your GitHub
 ~~~
-
 1. A command and output that shows the hostname of your database server
-2. A command and output that reports the database server version
-3. A command and output that lists all the databases in the server
 ~~~
 ![](/img/1-add1.PNG)
+~~~
+2. A command and output that reports the database server version
+~~~
 ![](/img/1-13.PNG)
+~~~
+3. A command and output that lists all the databases in the server
+~~~
 ![](/img/1-12.PNG)
 
 ~~~
-
 mysql -u root -p
 
 # db, user 생성
