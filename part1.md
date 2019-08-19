@@ -249,3 +249,18 @@ http://52.78.148.227:7180/
 admin / admin
 ~~~
 
+![](/img/1-16.PNG)
+![](/img/1-17.PNG)
+![](/img/1-18.PNG)
+![](/img/1-19.PNG)
+
+HDFS, YARN, ZooKeeper 먼저 설치
+
+![](/img/1-20.PNG)
+![](/img/1-21.PNG)
+![](/img/1-22.PNG)
+
+
+
+
+
