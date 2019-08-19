@@ -264,7 +264,11 @@ HDFS, YARN, ZooKeeper 먼저 설치
 ![](/img/1-23.PNG)
 ![](/img/1-24.PNG)
 
-
-
+## 2. 
+~~~
+hue 계정 생성
+training/training
+~~~
+![](/img/3-1.PNG)
 
 
