@@ -150,7 +150,7 @@ sudo systemctl status mariadb
 2. A command and output that reports the database server version
 3. A command and output that lists all the databases in the server
 ~~~
-
+![](/img/1-add1.PNG)
 ![](/img/1-13.PNG)
 ![](/img/1-12.PNG)
 
