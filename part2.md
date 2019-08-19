@@ -10,6 +10,7 @@ where a.status = 'Active'
 ![](/img/2-1.PNG)
 ![](/img/2-3.PNG)
 ![](/img/2-2.PNG)
+![](/img/2-problem1.PNG)
 
 ## 2.
 ~~~
@@ -125,6 +126,7 @@ where city='Palo Alto'
 and state = 'CA'
 ;
 ~~~
+![](/img/2-problem5.PNG)
 ![](/img/2-11.PNG)
 
 
@@ -150,6 +152,7 @@ order by lname, fname
 ) res
 ;
 ~~~
+![](/img/2-problem7.PNG)
 ![](/img/2-13.PNG)
 
 
@@ -196,6 +199,7 @@ group by o.prod_id
 order by cnt desc
 limit 3;
 ~~~
+![](/img/2-problem11-a.PNG)
 ![](/img/2-19.PNG)
 ![](/img/2-20.PNG)
 
@@ -207,7 +211,7 @@ and d.prod_id = p.prod_id
 and p.brand = 'Dualcore'
 group by to_date(o.order_date);
 ~~~
-
+![](/img/2-problem11-b.PNG)
 ![](/img/2-21.PNG)
 ![](/img/2-22.PNG)
 
@@ -221,6 +225,6 @@ group by o.order_id
 order by revenue desc
 limit 10;
 ~~~
-
+![](/img/2-problem11-c.PNG)
 ![](/img/2-23.PNG)
 ![](/img/2-24.PNG)
