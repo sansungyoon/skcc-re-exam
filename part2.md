@@ -174,3 +174,53 @@ create table solution as
 select concat('A',id) id, fname, lname, address, city, state, zip from customer
 ;
 ~~~
+![](/img/2-17.PNG)
+
+
+## 10.
+~~~
+create view solution as
+select c.id id, c.fname fname, c.lname lname, c.state state, c.zip zip, b.charge charge, substr(b.tstamp,0,10) billdate
+from billing b, customer c
+where b.id = c.id
+;
+~~~
+![](/img/2-18.PNG)
+
+## 11.
+~~~
+select o.prod_id, count(*) cnt from order_details o, products p
+where o.prod_id = p.prod_id
+and p.brand = 'Dualcore'
+group by o.prod_id
+order by cnt desc
+limit 3;
+~~~
+![](/img/2-19.PNG)
+![](/img/2-20.PNG)
+
+~~~
+select to_date(o.order_date) date, sum(p.price) revenue, sum(p.price-p.cost) profit
+from orders o, order_details d, products p
+where o.order_id = d.order_id
+and d.prod_id = p.prod_id
+and p.brand = 'Dualcore'
+group by to_date(o.order_date);
+~~~
+
+![](/img/2-21.PNG)
+![](/img/2-22.PNG)
+
+
+~~~
+select o.order_id order_id, sum(p.price) revenue
+from orders o, order_details d, products p
+where o.order_id = d.order_id
+and d.prod_id = p.prod_id
+group by o.order_id
+order by revenue desc
+limit 10;
+~~~
+
+![](/img/2-23.PNG)
+![](/img/2-24.PNG)
