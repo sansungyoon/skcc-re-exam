@@ -126,3 +126,51 @@ and state = 'CA'
 ;
 ~~~
 ![](/img/2-11.PNG)
+
+
+## 6.
+~~~
+create table solution as
+select id,fname,lname,address,city,state,zip,substr(birthday,7,4) birthyear
+from employee
+;
+~~~
+![](/img/2-12.PNG)
+
+
+## 7.
+~~~
+select concat_ws(',',res.lname,res.fname)
+from
+(
+select lname,fname
+from employee
+where city = 'Seattle'
+order by lname, fname
+) res
+;
+~~~
+![](/img/2-13.PNG)
+
+
+## 8.
+~~~
+sqoop export \
+--connect jdbc:mysql://localhost/problem8 \
+--username cloudera \
+--password cloudera \
+--table solution \
+--fields-terminated-by '\t' \
+--export-dir /user/training/problem8/data/customer/.
+~~~
+![](/img/2-14.PNG)
+![](/img/2-15.PNG)
+![](/img/2-16.PNG)
+
+
+## 9.
+~~~
+create table solution as
+select concat('A',id) id, fname, lname, address, city, state, zip from customer
+;
+~~~
